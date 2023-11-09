@@ -5,6 +5,7 @@ class Robot < ApplicationRecord
   enum :facing, { north: 0, east: 1, south: 2, west: 3 }, default: :north
 
   def self.instruct(command)
+    return 'No instruction' if command == nil || command.length == 0
     command_grid = command.split(' ')
     case command_grid[0]
     when 'PLACE'
@@ -18,7 +19,7 @@ class Robot < ApplicationRecord
     when 'REPORT'
       report_robot
     else
-      ''
+      'Invalid instruction'
     end
   end
 
