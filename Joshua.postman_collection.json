@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "d3c1ac32-77da-4d8e-bda1-ed83354336e2",
+		"name": "Joshua",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5721023"
+	},
+	"item": [
+		{
+			"name": "Robot Place",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/robot_command/instruct?command=PLACE 1,1,north",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"robot_command",
+						"instruct"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "PLACE 1,1,north"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Robot Move",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/robot_command/instruct?command=MOVE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"robot_command",
+						"instruct"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "MOVE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Robot Left",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/robot_command/instruct?command=LEFT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"robot_command",
+						"instruct"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "LEFT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Robot Report",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/robot_command/instruct?command=REPORT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"robot_command",
+						"instruct"
+					],
+					"query": [
+						{
+							"key": "command",
+							"value": "REPORT"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

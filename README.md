@@ -1,24 +1,13 @@
-# README
+# Ruby on Rails assessment for a Robot application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 1. Technologies used:
 
-Things you may want to cover:
+- Ruby 3.2.2
+- Rails 7.1.1
 
-* Ruby version
+# Instructions
 
-* System dependencies
+Access the API using the following format:
+`curl -X POST -d "command=PLACE 0,0,north" http://localhost:3000/robot_command/instruct`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Incuded a Postman collection for ease of use
